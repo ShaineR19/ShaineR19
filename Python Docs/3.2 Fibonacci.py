@@ -2,7 +2,12 @@
 # 3/21/2025
 # Fibonacci
 
-a,b = 0, 1
-while a < 10000000:
-    print(a, b)
-    a, b = b, a+b
+def fib(n):
+    a,b = 0, 1
+    while a < n:
+        print(f"{a},")
+        a, b = b, a+b
+
+fib(1000)
+
+print(fib(0))
